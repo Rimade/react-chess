@@ -9,8 +9,8 @@ import Timer from "./components/Timer";
 
 const App: React.FC = () => {
   const [board, setBoard] = useState<Board>(new Board());
-  const [whitePlayer, setWhitePlayer] = useState(new Player(Colors.WHITE));
-  const [blackPlayer, setBlackPlayer] = useState(new Player(Colors.BLACK));
+  const [whitePlayer, _] = useState(new Player(Colors.WHITE));
+  const [blackPlayer, __] = useState(new Player(Colors.BLACK));
   const [currentPlayer, setCurrentPlayer] = useState<Player | null>(null);
 
   useEffect(() => {
